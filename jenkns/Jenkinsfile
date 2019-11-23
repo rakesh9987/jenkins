@@ -1,0 +1,10 @@
+pipeline {
+   agents any
+   stages{
+      stage{'CheckoutStage'} {
+      steps {
+            sh 'git clone "git@github.com:dbarnett/python-helloworld.git"'
+   }
+      }
+   }
+}
