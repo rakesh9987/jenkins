@@ -5,8 +5,7 @@ pipeline {
           steps {
             sh 'rm -rf jenkins'
             sh 'git clone https://github.com/rakesh9987/jenkins.git'
-            sh 'cd learningpath'
-            bash hello_world.sh
+            sh 'hello_world.sh'
    }
       }
    }
