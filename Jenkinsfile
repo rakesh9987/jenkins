@@ -8,7 +8,8 @@ pipeline {
          steps {
             sh 'rm -rf *'
             sh '''
-            git clone https://github.com/rakesh9987/learningpath.git
+            #git clone https://github.com/rakesh9987/learningpath.git
+            checkout scm
             cd learningpath
             bash hello_world.sh
             '''
@@ -17,7 +18,6 @@ pipeline {
       stage('mvn install') {
          steps {
                   sh '''
-                  yum -y install docker
                   cd learningpath
                   ls
                   cd my-app
