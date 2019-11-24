@@ -17,7 +17,7 @@ pipeline {
       stage('mvn install') {
          steps {
                   sh '''
-                  ls
+                  yum -y install docker
                   cd learningpath
                   ls
                   cd my-app
