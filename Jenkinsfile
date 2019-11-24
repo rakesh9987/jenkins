@@ -3,6 +3,7 @@ pipeline {
    stages{
       stage('CheckoutStage') {
           steps {
+            rm -rf jenkins
             sh 'git clone https://github.com/rakesh9987/jenkins.git'
             cd jenkins
             bash hello_world.sh
