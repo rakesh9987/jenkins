@@ -8,9 +8,8 @@ pipeline {
             sh 'ls -al'
             sh 'chmod 775 learningpath' 
             sh 'ls -al'
-            cd 'learningpath'
+            sh 'cd learningpath'
             sh 'ls -al'
-            sh 'bash hello_world.sh'
    }
       }
    }
