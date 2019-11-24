@@ -6,6 +6,7 @@ pipeline {
             sh 'rm -rf *'
             sh 'git clone https://github.com/rakesh9987/learningpath.git'
             sh 'cd learningpath' 
+            sh 'ls -al'
             sh 'bash hello_world.sh'
    }
       }
