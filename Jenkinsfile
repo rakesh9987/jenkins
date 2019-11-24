@@ -1,5 +1,8 @@
 pipeline {
    agent any
+   tools {
+   maven 'maven_3.6.2'
+   }
    stages{
       stage('CheckoutStage') {
          steps {
@@ -13,11 +16,9 @@ pipeline {
       }
       stage('mvn install') {
          steps {
-               withMaven(maven : 'maven_3.6.2')
-                  sh 'mvn clean compile'             
+                  sh 'mvn clean compile'
             }
-           
+
    }
       }
    }
-
