@@ -17,6 +17,7 @@ pipeline {
       stage('mvn install') {
          steps {
                   sh '''
+                  ls
                   cd my-app
                   mvn package
                   mvn clean compile
