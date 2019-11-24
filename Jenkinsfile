@@ -11,5 +11,13 @@ pipeline {
             '''
    }
       }
+      stage('mvn install') {
+         steps {
+               withMaven(maven : 'maven_3.6.2')
+                  sh 'mvn clean compile'             
+            }
+           
    }
-}
+      }
+   }
+
