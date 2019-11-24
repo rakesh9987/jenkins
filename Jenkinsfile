@@ -18,6 +18,8 @@ pipeline {
          steps {
                   sh '''
                   ls
+                  cd learningpath
+                  ls
                   cd my-app
                   mvn package
                   mvn clean compile
