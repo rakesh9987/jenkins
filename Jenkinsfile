@@ -16,7 +16,12 @@ pipeline {
       }
       stage('mvn install') {
          steps {
-                  sh 'mvn clean compile'
+                  sh '''
+                  cd my-app
+                  mvn package
+                  mvn clean compile
+                  echo reached the last step RAY
+                  '''
             }
 
    }
