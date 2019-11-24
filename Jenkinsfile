@@ -4,9 +4,8 @@ pipeline {
       stage('CheckoutStage') {
           steps {
             sh 'rm -rf *'
-            sh 'git clone https://github.com/rakesh9987/jenkins.git'
-            cd jenkins
-            bash hello_world.sh
+            sh 'https://github.com/rakesh9987/learningpath.git' 
+            bash 'hello_world.sh'
    }
       }
    }
