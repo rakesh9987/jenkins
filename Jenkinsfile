@@ -1,12 +1,16 @@
 pipeline {
-   agents any
+   agent any
    stages{
-      stage{'CheckoutStage'} {
+      stage ('CheckoutStage') {
       steps {
             sh 'git clone https://github.com/rakesh9987/jenkins.git'
-            cd jenkins
+            sh cd jenkins
             bash hello_world.sh
    }
       }
    }
 }
+
+
+
+
