@@ -8,7 +8,7 @@ pipeline {
             sh 'ls -al'
             sh 'cd learningpath' 
             sh 'ls -al'
-            sh 'cd learningpath'
+            cd 'learningpath'
             sh 'ls -al'
             sh 'bash hello_world.sh'
    }
