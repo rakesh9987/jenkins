@@ -8,8 +8,10 @@ pipeline {
          steps {
             sh 'rm -rf *'
             sh '''
+            ls
             #git clone https://github.com/rakesh9987/learningpath.git
             checkout scm
+            ls
             cd learningpath
             bash hello_world.sh
             '''
