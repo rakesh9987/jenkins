@@ -9,7 +9,6 @@ pipeline {
             sh 'rm -rf *'
             sh '''
             git clone https://github.com/rakesh9987/learningpath.git
-            #checkout scm
             ls
             cd learningpath
             bash hello_world.sh
